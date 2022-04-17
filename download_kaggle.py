@@ -26,7 +26,7 @@ for with_ext in names:
 
     #test.sql file should be placed in the bin directory of sqlcl or else provide the complete path
     subprocess.run(["sql",
-                    "username/password@dbserver:1521/dbname",
+                    "arup/arup@192.168.29.71:1521/testpdb1.localdomain",
                     "@",
                     r"test.sql", ""+file_name+"", ""+with_ext+"",
                     ";"])
